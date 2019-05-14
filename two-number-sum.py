@@ -7,7 +7,7 @@ Optimal Complexity:
 
     or
 
-    Time: O(nlogn)
+    Time: O(nlog(n))
     Space: O(1)
 """
 
