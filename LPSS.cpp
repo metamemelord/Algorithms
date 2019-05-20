@@ -45,7 +45,7 @@ Theory:
     Recurrence:
         F(length, starting_idx, ending_idx) = 
                 1, if starting and ending indices are same
-                2 + F(length-1, starting_idx+1, ending_idx-1), if value at starting index and value at ending index are same
+                2 + F(length-2, starting_idx+1, ending_idx-1), if value at starting index and value at ending index are same
                 Otherwise, max(F(length-1, starting_index+1, ending_index), F(length-1, starting_index, ending_index-1))
 
         IMPORTANT: We do need not pass both starting and ending indices, as we can get all three using any two.
@@ -107,7 +107,8 @@ int lengthOfLPSSIter(const string &s)
 }
 
 /*
-Solution using Longest Common Sub-sequence problem. 
+Solution using Longest Common Sub-sequence problem.
+
 Observation:
     Longest palindromic subsequence of a string/sequence is same as longest common subsequence of the string with it's reversed string.
 
@@ -154,6 +155,7 @@ int lengthOfLPSSUsingLCSS(const string &s)
 
 /*
 Longest Common Sub-sequence problem. 
+
 Iterative solution:
     Time: O(n*m) (Worst: O(n*m))
     Space: O(n*m) (Worst: O(n*m))
