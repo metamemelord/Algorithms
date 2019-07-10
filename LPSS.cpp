@@ -2,8 +2,8 @@
 Given a string, find the length of longest palindromic sub-sequence
 
 Optimal complxity:
-    Time: O(n*2)
-    Space: O(n*2)
+    Time: O(n*n)
+    Space: O(n*n)
 */
 
 #include <bits/stdc++.h>
@@ -15,8 +15,8 @@ map<pair<int, int>, int> mLcss;
 
 /*
 Recursive solution:
-    Time: O(n*2) (Worst: O(n*2))
-    Space: O(n*2) (Worst: O(n*2))   
+    Time: O(n*n) (Worst: O(n*n))
+    Space: O(n*n) (Worst: O(n*n))   
 */
 int lengthOfLPSS(const string &s, int bg, int en)
 {
@@ -36,8 +36,8 @@ int lengthOfLPSS(const string &s, int bg, int en)
 
 /*
 Iterative solution:
-    Time: O(n*2) (Worst: O(n*2))
-    Space: O(n*2) (Worst: O(n*2))  
+    Time: O(n*n) (Worst: O(n*n))
+    Space: O(n*n) (Worst: O(n*n))  
 
 Theory:
     Double looping is required to solve this problem. Here's analysis of recurrence and looping:
