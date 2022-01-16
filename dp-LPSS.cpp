@@ -55,7 +55,8 @@ Theory:
             i: 0 .. len
                 j: i+1 .. len
                     // Do something
-        The above loop will not help us in getting the subsequence, why? Lack of OPTIMAL SUBSTRUCTURE.
+        The above loop will not help us in getting the subsequence, why? Lack of OPTIMAL SUBSTRUCTURE or lack of proper 
+        TOPOLOGICAL ORDER to solve the subproblems.
         Considering we are dealing with string endpoints, the above problem gives indices of strings like:
             0 to 1: length = 1
             0 to 2: length = 2
